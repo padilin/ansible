@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: opensuse
   become: true
   tasks:
   - name: Install htop
