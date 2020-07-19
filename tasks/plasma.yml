@@ -11,3 +11,5 @@
 
 - name: Run Py script to change wallapaper
   command: python3 /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
+  become: yes
+  become_user: tj
