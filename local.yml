@@ -2,8 +2,8 @@
   become: true
   pre_tasks:
     - name: update repositories
-       zypper: update_cache=yes
-       changed_when: False
+      zypper: update_cache=yes
+      changed_when: False
   tasks:
     - include: tasks/users.yml
     - include: tasks/packages.yml
