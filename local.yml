@@ -1,6 +1,5 @@
 - hosts: localhost
   become: true
   tasks:
-    - zypper: name=htop
-      name: htop
-      state: present
+    - name: Install htop
+      zypper: name=htop
