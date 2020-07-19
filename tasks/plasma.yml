@@ -6,8 +6,8 @@
     name: argparse
     executable: pip3
 
-- name: Copy wallpaper file
-  copy: src=/utilities/plasma_wallpaper_changer.py dest=/home/tj/.utilities/plasma_wallpaper_changer.py owner=tj group=tj mode=600
+- name: Copy wallpaper script
+  copy: src=utilities/plasma_wallpaper_changer.py dest=/home/tj/.utilities/plasma_wallpaper_changer.py owner=tj group=tj mode=600
 
 - name: Run Py script to change wallapaper
   script: /home/tj/.utilities/plasma_wallpaper_changer.pyy /home/tj/.wallapaper.jpg
