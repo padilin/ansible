@@ -1,5 +1,6 @@
-- hosts: opensuse
+- hosts: localhost
   become: true
   tasks:
-  - name: Install htop
-    zypper: name=htop
+  - zypper: name=htop
+    name: htop
+    state: present
