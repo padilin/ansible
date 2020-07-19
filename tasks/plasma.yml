@@ -7,5 +7,6 @@
     executable: pip3
 
 - name: Run Py script to change wallapaper
-  command: /utilities/plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
-  executable: python3
+  script: /utilities/plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
+  args:
+    executable: python3
