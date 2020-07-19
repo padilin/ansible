@@ -1,6 +1,6 @@
 - hosts: localhost
   become: true
   tasks:
-  - zypper: name=htop
-    name: htop
-    state: present
+    - zypper: name=htop
+      name: htop
+      state: present
