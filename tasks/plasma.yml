@@ -10,8 +10,8 @@
   copy: src=utilities/plasma_wallpaper_changer.py dest=/home/tj/.plasma_wallpaper_changer.py
 
 - name: Run Py script to change wallapaper
-  become: yes
-  become_user: tj
+  environment:
+    DISPLAY: ':0'
   script: /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
   args:
     executable: python3
