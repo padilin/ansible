@@ -1,5 +1,5 @@
 - name: Copy wallpaper file
-  copy: src=files/wallpaper.jpg dest=/home/tj/.wallpaper.jpg owner=tj group=tj mode=600
+  copy: src=files/wallpaper.jpg dest=/home/tj/.wallpaper.jpg
  
 - name: Install dependencies
   pip:
