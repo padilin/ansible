@@ -1,2 +1,4 @@
 - name: Install packages
-  zypper: name=['htop', 'neofetch']
+  - zypper:
+    name: ['htop', 'neofetch']
+    state: present    
