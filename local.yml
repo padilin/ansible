@@ -2,7 +2,7 @@
   become: true
   pre_tasks:
     - name: update repositories
-      - zypper:
+      zypper:
         update_cache: yes
         name: '*'
         state: latest
