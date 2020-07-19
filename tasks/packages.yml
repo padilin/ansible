@@ -1,0 +1,4 @@
+- name: Install packages
+  zypper: name={{item}}
+  with_items:
+    - htop
