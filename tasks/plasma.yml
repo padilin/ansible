@@ -9,7 +9,7 @@
 - name: Copy wallpaper script
   copy: src=utilities/plasma_wallpaper_changer.py dest=/home/tj/.plasma_wallpaper_changer.py
 
-name: Change wallapaper
+- name: Change wallapaper
   script: "qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript '
     var allDesktops = desktops();
     print (allDesktops);
