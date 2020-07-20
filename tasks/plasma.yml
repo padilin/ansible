@@ -16,3 +16,5 @@
   raw: python3 /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
   args:
     executable: /usr/bin/plasmashell
+  environment:
+    XDG_RUNTIME_DIR: /run/user/1000
