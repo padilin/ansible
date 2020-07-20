@@ -13,7 +13,7 @@
   # script: qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "file:///home/tj/.wallpaper.jpg")}'
 
 - name: Run Py script to change wallapaper
-  script: python3 /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
+  script: /usr/bin/python3 /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
   args:
     executable: /usr/bin/plasmashell
   environment:
