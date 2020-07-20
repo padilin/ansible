@@ -2,7 +2,7 @@
   copy: src=files/wallpaper.jpg dest=/home/tj/.wallpaper.jpg
   
 - name: Feh sets background
-  shell feh --bg-center /home/tj/.wallapaper.jpg
+  shell: feh --bg-center /home/tj/.wallapaper.jpg
  
 # - name: Install dependencies
   # pip:
