@@ -3,6 +3,8 @@
   
 - name: Feh sets background
   shell: feh --bg-center /home/tj/.wallpaper.jpg
+  environment:
+    DISPLAY: :0
  
 # - name: Install dependencies
   # pip:
