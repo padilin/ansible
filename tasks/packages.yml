@@ -1,4 +1,4 @@
 - name: Install packages.
   zypper:
-    name: ['htop', 'neofetch']
+    name: ['htop', 'neofetch', 'qdbus']
     state: present    
