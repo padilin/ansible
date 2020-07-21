@@ -1,4 +1,4 @@
 - name: Install packages.
   zypper:
-    name: ['htop', 'neofetch']
+    name: ['htop', 'neofetch', 'feh', 'zsh', 'powerline']
     state: present    
