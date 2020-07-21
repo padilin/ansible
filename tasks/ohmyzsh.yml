@@ -16,7 +16,7 @@
     regexp: 'plugins=(.*)'
     replace: 'plugins=(git thefuck'
  
- - name: Set default shell
+- name: Set default shell
    become: yes
    user:
      name: 'tj'
