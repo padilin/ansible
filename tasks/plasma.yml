@@ -1,25 +1,8 @@
 - name: Copy wallpaper file
   copy: src=files/wallpaper.jpg dest=/home/tj/.wallpaper.jpg
-  
-- name: Feh sets background
-  shell: feh --bg-center /home/tj/.wallpaper.jpg
-  environment:
-    DISPLAY: :0
- 
-# - name: Install dependencies
-  # pip:
-    # name: argparse
-    # executable: pip3
 
-# - name: Copy wallpaper script
-  # copy: src=utilities/plasma_wallpaper_changer.py dest=/home/tj/.plasma_wallpaper_changer.py
-
-# - name: Change wallapaper
-  # script: qdbus org.kde.plasmashell /PlasmaShell org.kde.PlasmaShell.evaluateScript 'var allDesktops = desktops();print (allDesktops);for (i=0;i<allDesktops.length;i++) {d = allDesktops[i];d.wallpaperPlugin = "org.kde.image";d.currentConfigGroup = Array("Wallpaper", "org.kde.image", "General");d.writeConfig("Image", "file:///home/tj/.wallpaper.jpg")}'
-
-# - name: Run Py script to change wallapaper
-  # script: /usr/bin/python3 /home/tj/.plasma_wallpaper_changer.py /home/tj/.wallapaper.jpg
-  # args:
-    # executable: /usr/bin/plasmashell
-  # environment:
-    # XDG_RUNTIME_DIR: /run/user/1000
+- name: Configure Wallpaper (will apply after reboot)
+  replace:
+    path: /home/tj/.config/plasma-org.pde.plasma.desktop-appletsrc
+    regexp: 'Image=.*(jpg|png)'
+    replace: 'Image=file:///home/tj/.wallpaper.jpg' 
