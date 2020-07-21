@@ -16,11 +16,11 @@
     regexp: 'plugins=(.*)'
     replace: 'plugins=(git thefuck'
  
-- name: Set default shell
-   become: yes
-   user:
-     name: 'tj'
-     shell: /bin/zsh
+# - name: Set default shell
+   # become: yes
+   # user:
+     # name: 'tj'
+     # shell: /bin/zsh
 
 # - name: Remove Oh-My-Zsh installer
   # file: path=/tmp/ohmyzshinstall.sh state=absent
