@@ -3,6 +3,7 @@
 
 - name: Execute Oh-My-Zsh installer
   shell: /tmp/ohmyzshinstall.sh
+  become: yes
  
 - name: Configure Oh-My-Zsh theme
   replace:
