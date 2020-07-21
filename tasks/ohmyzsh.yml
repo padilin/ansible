@@ -14,7 +14,7 @@
   replace:
     path: /home/tj/.zshrc
     regexp: 'plugins=(.*)'
-    replace: 'plugins=(git thefuck'
+    replace: 'plugins=(git thefuck)'
  
 # - name: Set default shell
    # become: yes
