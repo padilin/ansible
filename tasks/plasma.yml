@@ -5,4 +5,5 @@
   replace:
     path: /home/tj/.config/plasma-org.pde.plasma.desktop-appletsrc
     regexp: 'Image=.*(jpg|png)'
-    replace: 'Image=file:///home/tj/.wallpaper.jpg' 
+    replace: 'Image=file:///home/tj/.wallpaper.jpg'
+    when: (ansible_facts['distribution'] == "OpenSUSE")
